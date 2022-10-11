@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Noindex, Nofollow">
+    <meta name="description" content="Calculadora de autonomia para viagens">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <header>
+      <h1>Calculadora de Autonomia</h1>
+    </header>
+    <main>
+        <form action="calculadora.php" method="post">
+
+            <fieldset>
+                <legend>Selecione o tipo de combustível:</legend>
+                <select name="combustivel" required>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="etanol">Etanol</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="">Distancia</label>
+                <input type="number" name="distancia" placeholder="Km de distancia" min="1" required>
+                <br>
+                <label for="">Autonomia</label>
+                <input type="number" name="autonomia" placeholder="Km / litro" min="1" required>
+            </fieldset>
+        
+            <button type="submit">Calcular</button>
+        </form>
+</main>
+<footer>
+</footer>    
+</body>
+</html>
